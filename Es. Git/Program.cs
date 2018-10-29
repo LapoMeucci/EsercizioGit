@@ -25,7 +25,7 @@ namespace Es.Git
             Array.Sort(vettore);
             foreach (int i in vettore) Console.Write(i + " ");
             Console.ReadKey();
-            //lapo  
+            
             
             }
         }
