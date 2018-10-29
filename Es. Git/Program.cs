@@ -10,16 +10,20 @@ namespace Es.Git
     {
         static void Main(string[] args)
         {
-           
             int[] vettore = { 2, 5, 3, 23, 12, 8, 6, 7, 1, 29 };
             int num_min = vettore[0];
             int num_max = vettore[0];
 
+            // numero minimo e massimo del vettore
             num_max = vettore.Max();
             num_min = vettore.Min();
 
             Console.WriteLine("Numero massimo : " + num_max);
             Console.WriteLine("Numero minimo : " + num_min);
+            
+            // ordinamento vettore
+            Array.Sort(vettore);
+            foreach (int i in vettore) Console.Write(i + " ");
             Console.ReadKey();
 
             }
